@@ -51,8 +51,11 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ArrowSpawner.cs" />
-     <Compile Include="Assets\Scripts\Enemies\Arrow.cs" />
-     <Compile Include="Assets\Scripts\Enemies\Crossbow.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Crossbow\Arrow.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Crossbow\Crossbow.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\Enemies\MeleeEnemy\MeeleEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemies\MeleeEnemy\MeeleEnemyAngryZone.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerMove.cs" />
@@ -635,6 +638,12 @@
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.34f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{be593489-b247-64e8-199f-aaad37923d4b}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
