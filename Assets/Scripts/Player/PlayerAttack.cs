@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerAttack : MonoBehaviour
+{
+    public Transform muzzle;
+    public GameObject bulletFab;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q)) CreateBullet();
+    }
+
+    private void CreateBullet()
+    {
+        Instantiate(bulletFab, muzzle.position, transform.rotation);
+    }
+}

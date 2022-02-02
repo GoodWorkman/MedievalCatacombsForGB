@@ -6,11 +6,11 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
    public Transform[] spawnPoints;
-   public GameObject enemyMeele;
+   public GameObject enemyMeele; // сюда в инспекторе закладываем префаб врага
 
    private void Start()
    {
-      //CreateEnemies(); включения спавна на 4 точках
+      CreateEnemies(); //включения спавна на 4 точках (добавлять через инспектор нужное кол-во точек)
    }
 
    public void CreateEnemies()
