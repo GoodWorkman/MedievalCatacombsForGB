@@ -19,7 +19,7 @@ public class MeeleEnemy : MonoBehaviour
 
     private void Update()
     {
-        if (!_isAngry) return;
+        if (_isAngry==false) return; // if (!_isAngry) return; в ифе всегда должбыть тру
         
         _agent.SetDestination(_player.position); // при нахождении в зоне враг двигается к ГГ кажд update
     }

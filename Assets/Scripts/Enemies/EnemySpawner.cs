@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
 
    private void Start()
    {
-      CreateEnemies(); //включения спавна на 4 точках (добавлять через инспектор нужное кол-во точек)
+      //CreateEnemies(); //включения спавна на 4 точках (добавлять через инспектор нужное кол-во точек)
    }
 
    public void CreateEnemies()

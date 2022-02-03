@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Enemies\MeleeEnemy\MeeleEnemy.cs" />
      <Compile Include="Assets\Scripts\Enemies\MeleeEnemy\MeeleEnemyAngryZone.cs" />
      <Compile Include="Assets\Scripts\EnemyObjects\WallArrSpawn.cs" />
+     <Compile Include="Assets\Scripts\General\TriggerHandler.cs" />
      <Compile Include="Assets\Scripts\Player\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerBullet.cs" />
