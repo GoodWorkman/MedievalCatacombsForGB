@@ -8,7 +8,7 @@ public class HealthBar : MonoBehaviour
 {
     [SerializeField] private Image _fillImage;
 
-    private void Start()
+    private void OnEnable()
     {
         FindObjectOfType<PlayerHealth>().takeDamage += UpdateImage;
     }
@@ -18,7 +18,7 @@ public class HealthBar : MonoBehaviour
         _fillImage.fillAmount = value;
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         FindObjectOfType<PlayerHealth>().takeDamage -= UpdateImage;
     }

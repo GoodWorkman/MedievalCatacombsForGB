@@ -51,6 +51,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ArrowSpawner.cs" />
+     <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\Enemies\Crossbow\Arrow.cs" />
      <Compile Include="Assets\Scripts\Enemies\Crossbow\Crossbow.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemySpawner.cs" />

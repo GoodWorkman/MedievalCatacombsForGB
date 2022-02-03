@@ -30,18 +30,24 @@ public class WallArrowTransform : MonoBehaviour
 
         //PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
         //collision.rigidbody == null;
-        
+
         if (collision.rigidbody) //!= null)
         {
             print("1");
-            PlayerHealth playerHealth = collision.rigidbody.GetComponent<PlayerHealth>();
+            /*PlayerHealth playerHealth = collision.rigidbody.GetComponent<PlayerHealth>();
             if (playerHealth)
             {
                 print("2");
                 playerHealth.TakeDamage(_damage);
+            }*/
+            if (collision.rigidbody.TryGetComponent(out PlayerHealth playerHealth))
+            {
+                playerHealth.TakeDamage(_damage);
             }
         }
+
         Destroy(gameObject);
+
     }
 }
 

@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
    {
       for (int i = 0; i < spawnPoints.Length; i++)
       {
-         Instantiate(enemyMeele, spawnPoints[i].position, spawnPoints[i].rotation);
+         Instantiate(enemyMeele, spawnPoints[i].position, spawnPoints[i].rotation).name += "_"+i;
       }
    }
 }
