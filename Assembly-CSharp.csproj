@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Player\PlayerMove1.cs" />
      <Compile Include="Assets\Scripts\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\WallArrowTransform.cs" />
+     <Compile Include="Assets\Scripts\Weapons\Mine.cs" />
      <None Include="Assets\Models\Pack1\License.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/nikolaj/UnityProject/MedievalCatacombs/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

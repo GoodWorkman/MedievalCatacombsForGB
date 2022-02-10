@@ -16,7 +16,7 @@ public class PlayerBullet : MonoBehaviour
     private void FixedUpdate()
     {
         //transform.localPosition += transform.forward * speed * Time.deltaTime;
-        _rigidbody.velocity = Vector3.forward * speed;
+        _rigidbody.velocity = transform.forward * speed;
 
     }
 
